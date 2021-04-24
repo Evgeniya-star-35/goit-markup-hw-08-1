@@ -1,5 +1,4 @@
 .team {
-  min-width: 480px;
   background-color: $secondary-background-color;
 }
 .team-cardset__item {
@@ -14,9 +13,6 @@
 }
 
 @media screen and (min-width: $tablet-breakpoints) {
-  .team {
-    min-width: 768px;
-  }
   .team-cardset {
     display: flex;
     flex-wrap: wrap;
@@ -36,9 +32,6 @@
 }
 
 @media screen and (min-width: $desktop-breakpoints) {
-  .team {
-    min-width: 1200px;
-  }
   .team-cardset {
     display: flex;
     margin-right: -30px;

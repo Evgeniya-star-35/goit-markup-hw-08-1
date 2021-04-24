@@ -84,26 +84,6 @@
 .menu-container__link--current {
   color: $accent-color;
 }
-.mobile-social {
-  display: inline-flex;
-
-  &__link {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: #2196f3;
-  }
-  &__item:not(:last-child):after {
-    content: '';
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-    margin-left: 10px;
-    margin-right: 10px;
-    background-image: url('../../images/line.svg');
-  }
-}
 
 .contacts-mobile {
   margin-bottom: 64px;

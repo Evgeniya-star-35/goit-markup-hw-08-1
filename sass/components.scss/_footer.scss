@@ -155,7 +155,7 @@
   margin-top: 20px;
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: timing-function;
+  transition-timing-function: $timing-function;
 
   @media screen and (min-width: $desktop-breakpoints) {
     margin: 0 0 0 12px;
