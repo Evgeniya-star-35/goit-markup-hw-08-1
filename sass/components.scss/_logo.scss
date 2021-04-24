@@ -1,0 +1,23 @@
+.logo {
+  display: block;
+}
+.logo__span {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  @media screen and (min-width: $desktop-breakpoints) {
+    font-size: 26px;
+    line-height: 1.17;
+  }
+
+  &--accent {
+    color: $accent-color;
+  }
+  &--primary {
+    color: $primary-text-color;
+  }
+}

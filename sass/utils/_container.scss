@@ -1,0 +1,18 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $mobile-breakpoints) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet-breakpoints) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop-breakpoints) {
+    width: 1200px;
+  }
+}

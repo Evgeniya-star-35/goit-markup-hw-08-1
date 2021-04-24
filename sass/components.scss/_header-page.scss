@@ -1,0 +1,98 @@
+.page-header {
+  border-bottom: 1px solid $bg-color;
+
+  @media screen and (min-width: $tablet-breakpoints) {
+    position: static;
+  }
+}
+.page-header__container {
+  position: relative;
+}
+.page-header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: $tablet-breakpoints) {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: $desktop-breakpoints) {
+    margin-right: 94px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.page-header__navigation {
+  @media screen and (min-width: $tablet-breakpoints) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.page-header__main {
+  @media screen and (min-width: $tablet-breakpoints) {
+    display: flex;
+  }
+}
+.menu-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+.menu-button .icon-close {
+  display: block;
+}
+.menu-button {
+  @media screen and (min-width: $tablet-breakpoints) {
+    display: none;
+  }
+}
+
+// .menu-button.is-open .icon-close {
+//   display: block;
+//   z-index: 6;
+// }
+// .menu-button.is-open .icon-menu {
+//   display: none;
+// }
+
+// .menu-container {
+//   display: none;
+//   position: absolute;
+//   top: 50%;
+//   left: 0;
+//   width: 100%;
+//   padding-top: 48px;
+//   padding-bottom: 48px;
+//   padding-left: 40px;
+//   z-index: 5;
+//   background-color: $primery-white-color;
+//   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+//     0px 1px 3px rgba(0, 0, 0, 0.16);
+
+//   &.is-open {
+//     display: block;
+//   }
+// }
+
+// @media screen and (min-width: $tablet-breakpoints) {
+//   .menu-button,
+//   .menu-container,
+//   .menu-container.is-open {
+//     display: none;
+//   }
+// }
