@@ -53,7 +53,7 @@
     color: $secondary-text-color;
   }
   .contacts__icon {
-    display: inline-flex;
+    display: inline-block;
     margin-right: 8px;
     fill: $secondary-text-color;
     transition-property: fill;

@@ -153,6 +153,21 @@ a:focus {
   .page-header__main {
     justify-content: center;
   }
+  .container--header {
+    display: flex;
+  }
+}
+
+.page-header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__navigation {
+    justify-content: center;
+  }
 }
 
 .menu-button {
@@ -197,7 +212,6 @@ a:focus {
 
 .menu-container.is-open {
   display: block;
-  z-index: 10;
 }
 
 @media screen and (max-width: 767px) {
@@ -392,7 +406,7 @@ a:focus {
     color: #757575;
   }
   .contacts__icon {
-    display: inline-flex;
+    display: inline-block;
     margin-right: 8px;
     fill: #757575;
     transition-property: fill;
