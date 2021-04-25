@@ -290,7 +290,6 @@ a:focus {
   .site-nav {
     display: flex;
     margin-bottom: 0;
-    margin-right: 84px;
   }
   .site-nav__item:not(:last-child) {
     margin-right: 50px;
@@ -384,6 +383,7 @@ a:focus {
     margin: 0;
     padding-top: 21px;
     padding-bottom: 21px;
+    margin-left: 84px;
   }
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
