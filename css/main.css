@@ -389,7 +389,7 @@ a:focus {
     margin-bottom: 10px;
   }
   .contacts__link {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     font-size: 12px;
     font-weight: 500;
@@ -406,14 +406,15 @@ a:focus {
     color: #757575;
   }
   .contacts__icon {
-    display: inline-block;
+    display: inline-flex;
     margin-right: 8px;
-    fill: #757575;
+    fill: currentColor;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .contacts__icon:hover, .contacts__icon:focus {
+  .contacts__icon:hover,
+  .contacts__icon:focus {
     fill: #2196f3;
   }
 }
@@ -422,16 +423,16 @@ a:focus {
   .contacts {
     display: flex;
     padding: 0;
-    margin-left: auto;
   }
   .contacts__item {
     margin-bottom: 0;
   }
-  .contacts__item:not(:last-child) {
-    margin-right: 30px;
+  .contacts__item + .contacts__item {
+    margin-left: 30px;
   }
   .contacts__item:first-child {
     margin-bottom: 0;
+    margin-left: auto;
   }
   .contacts__item .contacts__link {
     padding-top: 32px;
