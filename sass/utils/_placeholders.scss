@@ -1,5 +1,9 @@
 html {
   box-sizing: border-box;
+
+  @media screen and (max-width: 568px) {
+    overflow-x: hidden;
+  }
 }
 *,
 *::before,

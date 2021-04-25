@@ -38,6 +38,12 @@ html {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 568px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
 *,
 *::before,
 *::after {
