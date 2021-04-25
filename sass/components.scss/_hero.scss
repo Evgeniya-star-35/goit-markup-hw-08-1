@@ -5,8 +5,8 @@
   text-align: center;
 }
 .hero__overlay {
-  width: 480px;
-  height: 400px;
+  min-width: 480px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
