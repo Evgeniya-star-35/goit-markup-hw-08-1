@@ -55,10 +55,12 @@
   }
 }
 .animate__bounceInRight {
-  animation-name: bounceInRight;
-  animation-duration: 2500ms;
-  animation-timing-function: $timing-function;
-  animation-delay: 150ms;
-  animation-direction: alternate;
-  animation-iteration-count: 3;
+  @media screen and (min-width: $tablet-breakpoints) {
+    animation-name: bounceInRight;
+    animation-duration: 2500ms;
+    animation-timing-function: $timing-function;
+    animation-delay: 150ms;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+  }
 }
