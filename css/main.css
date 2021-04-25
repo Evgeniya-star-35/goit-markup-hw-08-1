@@ -422,6 +422,7 @@ a:focus {
   .contacts {
     display: flex;
     padding: 0;
+    margin-left: 305px;
   }
   .contacts__item {
     margin-bottom: 0;
