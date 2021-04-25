@@ -20,16 +20,21 @@
     padding-bottom: 25px;
   }
 }
-
-.page-header__navigation {
+.page-header__main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @media screen and (min-width: $desktop-breakpoints) {
-    justify-content: center;
-  }
 }
+
+// .page-header__navigation {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+
+//   @media screen and (min-width: $desktop-breakpoints) {
+//     justify-content: center;
+//   }
+// }
 
 .menu-button {
   display: inline-flex;
