@@ -32,32 +32,41 @@
     &__item:not(:last-child) {
       margin-bottom: 10px;
     }
-    &__link {
-      display: flex;
-      align-items: center;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 1.167;
-      letter-spacing: 0.02em;
-      color: $secondary-text-color;
-    }
-    &__link--current {
-      color: $secondary-text-color;
-    }
   }
-}
-
-@media screen and (min-width: $tablet-breakpoints) {
   .contacts__link {
     display: inline-flex;
+    align-items: center;
     font-size: 12px;
-    line-height: 1.17;
-  }
+    font-weight: 500;
+    line-height: 1.167;
+    color: $secondary-text-color;
 
-  .contacts__item:not(:last-child) {
-    margin-bottom: 10px;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  .contacts__link--tel {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.167;
+    color: $secondary-text-color;
+  }
+  .contacts__icon {
+    display: inline-flex;
+    margin-right: 8px;
+    fill: $secondary-text-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
 }
+
 @media screen and (min-width: $desktop-breakpoints) {
   .contacts {
     display: flex;
@@ -65,8 +74,6 @@
     margin-left: auto;
   }
   .contacts__item {
-    padding-top: 32px;
-    padding-bottom: 32px;
     margin-bottom: 0;
 
     &:not(:last-child) {
@@ -84,20 +91,6 @@
     }
   }
 }
-@media screen and (min-width: $desktop-breakpoints) {
-  .contacts__link {
-    font-size: 14px;
-    line-height: 1.14;
-  }
-}
-.contacts__link--current {
-  color: $accent-color;
-}
-@media screen and (min-width: $tablet-breakpoints) {
-  .contacts__link--current {
-    color: $secondary-text-color;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .contacts__icon {
@@ -105,21 +98,6 @@
   }
 }
 
-@media screen and (min-width: $tablet-breakpoints) {
-  .contacts__icon {
-    display: inline-flex;
-    margin-right: 8px;
-    fill: $secondary-text-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: $timing-function;
-
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-    }
-  }
-}
 @media screen and (min-width: $desktop-breakpoints) {
   .contacts__icon {
     margin-right: 10px;
