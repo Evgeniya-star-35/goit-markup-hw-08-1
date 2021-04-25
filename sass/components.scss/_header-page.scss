@@ -11,22 +11,24 @@
 
   @media screen and (min-width: $tablet-breakpoints) {
     margin-right: 88px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   @media screen and (min-width: $desktop-breakpoints) {
     margin-right: 93px;
-    padding-top: 24px;
+    padding-top: 25px;
     padding-bottom: 25px;
   }
 }
-.page-header__main {
-  display: flex;
-}
+
 .page-header__navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: $desktop-breakpoints) {
+    justify-content: center;
+  }
 }
 
 .menu-button {
@@ -61,10 +63,15 @@
 }
 .menu-container {
   background-color: $primery-white-color;
+  z-index: 10;
 }
 .menu-container.is-open {
   display: block;
+  z-index: 10;
 }
+// .menu-container.is-open .page-header__logo {
+//   opacity: 0;
+// }
 
 @media screen and (max-width: 767px) {
   .menu-container {

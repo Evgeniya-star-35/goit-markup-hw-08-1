@@ -11,10 +11,11 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: $primary-text-color;
-}
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .site-nav__link--current {
   color: $accent-color;
@@ -23,11 +24,12 @@
 @media screen and (min-width: $tablet-breakpoints) {
   .site-nav {
     display: flex;
-    margin: 0;
+    margin-bottom: 0;
     margin-right: 84px;
 
     &__item:not(:last-child) {
       margin-right: 50px;
+      margin-bottom: 0;
     }
   }
   .site-nav__link {
@@ -40,7 +42,9 @@
     letter-spacing: 0.02em;
     color: $primary-text-color;
   }
-
+  .site-nav__link--current {
+    color: $primary-text-color;
+  }
   .site-nav__studio {
     position: relative;
     display: block;
@@ -72,5 +76,13 @@
     height: 4px;
     background: #2196f3;
     border-radius: 2px;
+  }
+  .site-nav__item {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: $desktop-breakpoints) {
+  .site-nav {
+    margin-right: 0;
   }
 }

@@ -4,6 +4,23 @@
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
+  &__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__link--current {
+    color: $accent-color;
+  }
 }
 
 @media screen and (min-width: $tablet-breakpoints) {
@@ -11,9 +28,22 @@
     margin: 0;
     padding-top: 21px;
     padding-bottom: 21px;
-  }
-  .contacts__item:not(:last-child) {
-    margin-bottom: 10px;
+
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.167;
+      letter-spacing: 0.02em;
+      color: $secondary-text-color;
+    }
+    &__link--current {
+      color: $secondary-text-color;
+    }
   }
 }
 
@@ -23,29 +53,25 @@
     padding: 0;
     margin-left: auto;
   }
-  .contacts__item:not(:last-child) {
-    margin: 0;
-    margin-right: 30px;
-  }
   .contacts__item {
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &:first-child {
+      margin-bottom: 0;
+    }
   }
 }
 .contacts__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 14px;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: $secondary-text-color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
+  line-height: 1.143;
 }
 @media screen and (min-width: $tablet-breakpoints) {
   .contacts__link {
