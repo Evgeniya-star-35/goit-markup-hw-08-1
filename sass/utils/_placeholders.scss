@@ -1,9 +1,5 @@
 html {
   box-sizing: border-box;
-
-  @media screen and (max-width: 568px) {
-    overflow-x: hidden;
-  }
 }
 *,
 *::before,
@@ -14,10 +10,6 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: $primery-white-color;
   color: $primary-text-color;
-
-  @media screen and (max-width: 568px) {
-    overflow-x: hidden;
-  }
 }
 
 p {
