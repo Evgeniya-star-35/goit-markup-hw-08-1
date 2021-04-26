@@ -491,13 +491,20 @@ a:focus {
 }
 
 .hero__overlay {
-  min-width: 480px;
-  min-height: 400px;
+  width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/foto3/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2ddpx) {
+  .hero__overlay {
+    background-image: url(../images/foto4/overlay2x.jpg);
+  }
 }
 
 .hero__title {
@@ -517,6 +524,7 @@ a:focus {
   .hero__overlay {
     width: 768px;
     height: 400px;
+    background-size: cover;
   }
 }
 
@@ -528,6 +536,7 @@ a:focus {
   .hero__overlay {
     width: 1600px;
     height: 600px;
+    background-size: cover;
   }
   .hero__title {
     max-width: 696px;
@@ -767,7 +776,7 @@ a:focus {
 }
 
 .team-cardset__thamb {
-  width: 450px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {

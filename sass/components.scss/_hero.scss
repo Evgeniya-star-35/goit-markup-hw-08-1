@@ -5,8 +5,8 @@
   text-align: center;
 }
 .hero__overlay {
-  min-width: 480px;
-  min-height: 400px;
+  width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -17,7 +17,18 @@
     url(../images/foto3/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2ddpx) {
+  .hero__overlay {
+    background-image: url(../images/foto4/overlay2x.jpg);
+  }
+}
+
 .hero__title {
   max-width: 360px;
   margin: 0 auto;
@@ -35,6 +46,7 @@
   .hero__overlay {
     width: 768px;
     height: 400px;
+    background-size: cover;
   }
 }
 @media screen and (min-width: $desktop-breakpoints) {
@@ -45,6 +57,7 @@
   .hero__overlay {
     width: 1600px;
     height: 600px;
+    background-size: cover;
   }
   .hero__title {
     max-width: 696px;
