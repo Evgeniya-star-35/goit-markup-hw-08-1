@@ -533,7 +533,7 @@ a:focus {
 
 @media screen and (min-width: 527px) and (min-device-pixel-ratio: 2), screen and (min-width: 527px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 527px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 527px) and (min-resolution: 192dpi), screen and (min-width: 527px) and (min-resolution: 2ddpx) {
   .hero__overlay {
-    background-image: url("../images/overlay2/header-img@2x.jpg");
+    background-image: url("../images/overlay3/header-img@2x.jpg");
   }
 }
 
