@@ -85,8 +85,16 @@
   }
 }
 .team-cardset__img {
-  width: 100%;
+  width: 450px;
+
+  @media screen and (min-width: $tablet-breakpoints) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop-breakpoints) {
+    width: 270px;
+  }
 }
+
 .animate__rotateOut {
   @media screen and (min-width: $tablet-breakpoints) {
     animation-name: rotateOut;
