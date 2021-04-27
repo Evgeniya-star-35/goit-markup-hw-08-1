@@ -1072,33 +1072,15 @@ a:focus {
   .overlay-foto {
     position: relative;
     overflow: hidden;
-    width: 450px;
+    width: 100%;
   }
   .overlay-foto__text {
-    width: 322px;
+    width: 100%;
     margin: 0;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: #ffffff;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .overlay-foto {
-    width: 354px;
-  }
-  .overlay-foto__text {
-    width: 306px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .overlay-foto {
-    width: 370px;
-  }
-  .overlay-foto__text {
-    width: 322px;
   }
 }
 
