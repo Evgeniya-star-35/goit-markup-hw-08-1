@@ -21,9 +21,16 @@
   }
 }
 .modal {
+  @media screen and (max-width: 465px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 466px) and (max-width: 767px) {
+    width: 450px;
+  }
+}
+.modal {
   position: relative;
   opacity: 1;
-  width: 100%;
   min-height: 609px;
   padding: 40px;
   background-color: $primery-white-color;
@@ -65,7 +72,7 @@
     transition: opasity 250ms $timing-function;
   }
   .modal {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     width: 450px;
