@@ -1478,11 +1478,22 @@ a:focus {
   }
 }
 
+@media screen and (max-width: 465px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 466px) and (max-width: 767px) {
+  .form {
+    width: 370px;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
