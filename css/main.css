@@ -1415,18 +1415,6 @@ a:focus {
   opacity: 0;
 }
 
-@media screen and (max-width: 465px) {
-  .modal {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 466px) and (max-width: 767px) {
-  .modal {
-    width: 450px;
-  }
-}
-
 .modal {
   position: relative;
   opacity: 1;
@@ -1444,6 +1432,20 @@ a:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (max-width: 465px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 466px) and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .modal__close {
