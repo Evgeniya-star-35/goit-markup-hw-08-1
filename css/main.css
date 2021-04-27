@@ -10,6 +10,7 @@
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -1291,9 +1292,15 @@ a:focus {
   background-color: #2f303a;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer-form__input {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
   }
 }
 
