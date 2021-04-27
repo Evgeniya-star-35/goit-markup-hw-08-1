@@ -1418,7 +1418,7 @@ a:focus {
 .modal {
   position: relative;
   opacity: 1;
-  min-width: 450px;
+  width: 100%;
   min-height: 609px;
   padding: 40px;
   background-color: #ffffff;
