@@ -996,13 +996,13 @@ a:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .card-set__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .card-set {
     display: flex;
     flex-wrap: wrap;
@@ -1049,7 +1049,7 @@ a:focus {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .overlay-foto__text {
     padding: 77px 24px;
     margin: 0;
@@ -1064,8 +1064,7 @@ a:focus {
 }
 
 .overlay-foto__img {
-  width: 100%;
-  height: 100%;
+  width: 450px;
 }
 
 .overlay-foto__card {
@@ -1097,11 +1096,17 @@ a:focus {
     justify-content: center;
     width: 306px;
   }
+  .overlay-foto__img {
+    width: 354px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .overlay-foto__text {
-    width: 322x;
+    width: 322px;
+  }
+  .overlay-foto__img {
+    width: 370px;
   }
 }
 
@@ -1298,7 +1303,7 @@ a:focus {
   }
 }
 
-@media screen and (min-width: 561px) and (max-width: 1199px) {
+@media screen and (min-width: 561px) and (max-width: 1199.98px) {
   .footer-form__input {
     width: 450px;
   }
