@@ -1285,7 +1285,7 @@ a:focus {
 
 @media screen and (max-width: 1199px) {
   .footer-form__input {
-    width: 450px;
+    width: 100%;
   }
 }
 
