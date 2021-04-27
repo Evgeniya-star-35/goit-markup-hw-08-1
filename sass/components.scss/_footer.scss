@@ -122,13 +122,15 @@
   color: $primery-white-color;
   background-color: $bg-hero-color;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 560px) {
     width: 100%;
   }
-
-  @media screen and (min-width: $tablet-breakpoints) {
+  @media screen and (min-width: 561px) and (max-width: 1199px) {
     width: 450px;
   }
+  // @media screen and (min-width: $tablet-breakpoints) {
+  //   width: 450px;
+  // }
   @media screen and (min-width: $desktop-breakpoints) {
     width: 358px;
   }
