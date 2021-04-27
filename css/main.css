@@ -541,14 +541,14 @@ a:focus {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay3/img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay-desktop/img.jpg");
     background-size: 1600px 600px;
   }
 }
 
 @media screen and (min-width: 1020px) and (min-device-pixel-ratio: 2), screen and (min-width: 1020px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1020px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1020px) and (min-resolution: 192dpi), screen and (min-width: 1020px) and (min-resolution: 2ddpx) {
   .hero__overlay {
-    background-image: url("../images/overlay3/img@2x.jpg");
+    background-image: url("../images/overlay-desktop/img@2x.jpg");
   }
 }
 
