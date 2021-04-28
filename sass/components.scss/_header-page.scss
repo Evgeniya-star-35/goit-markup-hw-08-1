@@ -61,7 +61,35 @@
 .menu-button .icon-close {
   display: block;
 }
-.menu-button {
+.button-cross {
+  position: absolute;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  top: 16px;
+  right: 25px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+  @media screen and (min-width: 530px) {
+    right: 50px;
+  }
+  @media screen and (min-width: 600px) {
+    right: 100px;
+  }
+  @media screen and (min-width: 680px) {
+    right: 150px;
+  }
+}
+.menu-button,
+.button-cross {
   @media screen and (min-width: $tablet-breakpoints) {
     display: none;
   }
