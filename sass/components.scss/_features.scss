@@ -54,7 +54,11 @@
   color: $primary-text-color;
   margin-top: 30px;
   margin-bottom: 10px;
-  text-align: left;
+  text-align: center;
+
+  @media screen and (min-width: $tablet-breakpoints) {
+    text-align: left;
+  }
 }
 .features__text {
   font-weight: normal;
