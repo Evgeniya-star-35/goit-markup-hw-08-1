@@ -111,12 +111,7 @@ a:focus {
 
 .page-header {
   position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header {
-    border-bottom: 1px solid #e5e5e5;
-  }
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .page-header__logo {
@@ -954,6 +949,7 @@ a:focus {
 .buttons {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .buttons__item:not(:last-child) {
@@ -1010,10 +1006,6 @@ a:focus {
   }
 }
 
-.card-set {
-  margin-top: 30px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .card-set {
     display: flex;
@@ -1023,7 +1015,7 @@ a:focus {
   }
   .card-set__item {
     margin-top: 30px;
-    margin-left: 30px;
+    margin-right: 30px;
     flex-basis: calc((100% - 2 * 30px) / 2);
   }
 }

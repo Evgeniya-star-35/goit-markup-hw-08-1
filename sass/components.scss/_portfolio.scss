@@ -1,7 +1,7 @@
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  // margin-bottom: 40px;
+  margin-bottom: 30px;
 
   &__item:not(:last-child) {
     margin-right: 8px;
@@ -62,9 +62,6 @@
     margin-bottom: 30px;
   }
 }
-.card-set {
-  margin-top: 30px;
-}
 
 @media screen and (min-width: $tablet-breakpoints) and (max-width: 1199.98px) {
   .card-set {
@@ -75,7 +72,7 @@
   }
   .card-set__item {
     margin-top: 30px;
-    margin-left: 30px;
+    margin-right: 30px;
     flex-basis: calc((100% - 2 * 30px) / 2);
   }
 }
