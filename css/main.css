@@ -956,27 +956,22 @@ a:focus {
   flex-wrap: wrap;
 }
 
-.buttons__item {
+.buttons__item:not(:last-child) {
   margin-right: 8px;
-}
-
-.buttons__item:last-child {
-  margin-right: 0;
 }
 
 .buttons__item:nth-child(-n + 3) {
   margin-bottom: 15px;
 }
 
-.buttons__item:nth-last-child(-n + 3) {
-  margin-bottom: 40px;
-}
-
 @media screen and (min-width: 768px) {
   .buttons {
-    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 30px;
+  }
+  .buttons__item:nth-child(-n + 3) {
+    margin-bottom: 0;
   }
 }
 
@@ -1013,6 +1008,10 @@ a:focus {
   .card-set__item:not(:last-child) {
     margin-bottom: 30px;
   }
+}
+
+.card-set {
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
