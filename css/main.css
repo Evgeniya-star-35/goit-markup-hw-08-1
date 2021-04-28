@@ -212,7 +212,7 @@ a:focus {
   display: block;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -663,7 +663,7 @@ a:focus {
   color: #212121;
   margin-top: 30px;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .features__text {
