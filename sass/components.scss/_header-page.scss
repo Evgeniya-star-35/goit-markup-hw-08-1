@@ -2,7 +2,9 @@
   position: relative;
   border-bottom: 1px solid $bg-color;
 }
-
+.header-container {
+  display: flex;
+}
 .page-header__logo {
   display: block;
   padding-top: 16px;
