@@ -11,10 +11,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (min-width: $tablet-breakpoints) {
+    flex-direction: row;
+  }
 }
+
 .mobile-social-contacts {
   position: fixed;
   bottom: 48px;
+  @media screen and (min-width: $tablet-breakpoints) {
+    position: static;
+  }
 }
 .page-header__logo {
   display: block;

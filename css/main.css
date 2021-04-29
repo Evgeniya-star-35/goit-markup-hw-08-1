@@ -126,9 +126,21 @@ a:focus {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-flex {
+    flex-direction: row;
+  }
+}
+
 .mobile-social-contacts {
   position: fixed;
   bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-social-contacts {
+    position: static;
+  }
 }
 
 .page-header__logo {
