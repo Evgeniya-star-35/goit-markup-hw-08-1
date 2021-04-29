@@ -7,6 +7,15 @@
     display: flex;
   }
 }
+.menu-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobile-social-contacts {
+  position: fixed;
+  bottom: 48px;
+}
 .page-header__logo {
   display: block;
   padding-top: 16px;
