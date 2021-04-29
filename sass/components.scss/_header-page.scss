@@ -3,7 +3,9 @@
   border-bottom: 1px solid $bg-color;
 }
 .header-container {
-  display: flex;
+  @media screen and (min-width: $tablet-breakpoints) {
+    display: flex;
+  }
 }
 .page-header__logo {
   display: block;
