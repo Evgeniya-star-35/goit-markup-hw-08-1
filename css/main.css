@@ -199,7 +199,7 @@ a:focus {
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 1;
+  z-index: 16;
 }
 
 .menu-button:hover, .menu-button:focus {
@@ -208,42 +208,6 @@ a:focus {
 
 .menu-button .icon-close {
   display: block;
-}
-
-.button-cross {
-  position: absolute;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  top: 16px;
-  right: 25px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-cross:hover, .button-cross:focus {
-  fill: #2196f3;
-}
-
-@media screen and (min-width: 530px) {
-  .button-cross {
-    right: 50px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .button-cross {
-    right: 100px;
-  }
-}
-
-@media screen and (min-width: 680px) {
-  .button-cross {
-    right: 150px;
-  }
 }
 
 @media screen and (min-width: 768px) {
