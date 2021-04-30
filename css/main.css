@@ -51,6 +51,10 @@ body {
   color: #212121;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 p {
   margin: 0;
 }
