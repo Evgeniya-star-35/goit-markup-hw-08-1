@@ -9,6 +9,7 @@
 }
 .menu-flex {
   display: flex;
+
   flex-direction: column;
   justify-content: space-between;
   @media screen and (min-width: $tablet-breakpoints) {
@@ -127,7 +128,7 @@
 }
 .menu-container {
   background-color: $primery-white-color;
-  z-index: 10;
+  z-index: 15;
 }
 .menu-container.is-open {
   display: block;
