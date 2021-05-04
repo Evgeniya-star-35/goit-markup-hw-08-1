@@ -199,6 +199,7 @@ a:focus {
 
 .menu-button {
   display: inline-flex;
+  cursor: pointer;
   margin: 0;
   padding: 0;
   border: none;
